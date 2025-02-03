@@ -111,10 +111,66 @@ This repo can be cloned using the following command:
 2. Input your portfolio information
 3. Run cells below to analyze your portfolio and optimize!
 
+### Example Usage
+
+Suppose this is the stock portfolio we wish to optimize:
+
+| Stock | Name | Weight |
+|-|-|-|
+| NVDA | Nvidia | 10% |
+| MA | Mastercard | 70% |
+| NFLX | Netflix | 5% |
+| CMG | Chipotle | 7% |
+| MNST | Monster | 8% |
+
+Then in `usage.ipynb`, we input the portfolio information and run the cell
+
+```
+# enter portfolio information here
+stocks = ['NVDA', 'MA', 'NFLX', 'CMG', 'MNST']
+weights = [0.10, 0.70, 0.05, 0.07, 0.08]
+```
+
+Run the `initial_analysis` cell to analyze your current portfolio
+
+![Correlation matrix](/images/4.PNG)
+
+| | Metric | Value |
+|-|-|-|
+|0|VaR|-2.36%|
+|1|CVaR|-3.62%|
+|2|Volatility|24.66%|
+|3|Return|32.90%|
+|4|Sharpe Ratio|1.17|
+
+Run the `final_analysis` cell to compute our optimized portfolio and metrics
+
+```
+Total Iterations Completed: 16
+Sharpe Ratio: 1.509349448183119
+Computed Optimal Portfolio:
+NVDA    30.85%
+MA      10.84%
+NFLX    20.38%
+CMG     19.35%
+MNST    18.57%
+dtype: object
+```
+
+![Convergence](/images/5.PNG)
+
+| | Metric | Value |
+|-|-|-|
+|0|VaR|-2.58%|
+|1|CVaR|-3.91%|
+|2|Volatility|27.29%|
+|3|Return|45.19%|
+|4|Sharpe Ratio|1.51|
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0077B5
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://www.linkedin.com/in/zachary-chann/
 [product-screenshot]: images/screenshot.png
 [Python]: https://img.shields.io/badge/python-000000?style=for-the-badge&logo=python&logoColor=blue
 [Pandas]: https://img.shields.io/badge/Pandas-000bff?style=for-the-badge&logo=pandas&logoColor=purple
