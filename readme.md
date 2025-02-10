@@ -41,7 +41,6 @@
 This project aims to maximize the Sharpe ratio via gradient ascent, working towards creating smarter, fact-based investment strategies while balancing return and risk. By using quantitative analysis and machine learning, it optimizes portfolio allocations for the most efficient risk-adjusted performance. The process follows a structured and intuitive workflow:
 
 - **Data Collection** – Gathering stock information from Yahoo Finance to capture market trends.
-- **Data Processing** – Cleaning and organizing raw data to ensure accuracy and usability.
 - **Exploratory Analysis** – Identifying trends, relationships, and key insights within the data.
 - **Risk Analysis** – Assessing portfolio volatility, downside risk, and drawdowns to maintain stability.
 - **Optimization** – Iteratively adjusting portfolio weights using gradient ascent to enhance performance.
