@@ -98,7 +98,7 @@ For the model to function, the following must be installed first:
 
 This repo can be cloned using the following command:
    ```sh
-   git clone https://github.com/chanz6/Portfolio-Optimization-Risk-Analysis.git
+   git clone https://github.com/chanz6/datasci-Portfolio-Optimization.git
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
